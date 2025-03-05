@@ -1,41 +1,15 @@
-# Foreword
+# پێشەکی
 
-It wasn’t always so clear, but the Rust programming language is fundamentally
-about _empowerment_: no matter what kind of code you are writing now, Rust
-empowers you to reach farther, to program with confidence in a wider variety of
-domains than you did before.
+هەرگیز ئەوەندە ئاسان نەبووە، زمانی پڕۆگرامینگی ڕەست بنەڕەتەن دەربارەی _بەهێزکردن_ دەبێت: هەر جۆرە کۆدێک کە ئێستا دەینووسن، ڕەست دەتوانێت دەستتان بگەیەنێتە ئاستێکی بەرزتر، بە متمانەوە پڕۆگرام بکەن لە بوارێکی فراوانتر وەک ئەوەی پێشتر دەتانتوانی.
 
-Take, for example, “systems-level” work that deals with low-level details of
-memory management, data representation, and concurrency. Traditionally, this
-realm of programming is seen as arcane, accessible only to a select few who
-have devoted the necessary years learning to avoid its infamous pitfalls. And
-even those who practice it do so with caution, lest their code be open to
-exploits, crashes, or corruption.
+وەک نموونە، کارکردن لە ئاستی "سیستم" کە مامەڵە دەکات لەگەڵ وردەکارییە نزمەکانی بەڕێوەبردنی بیرگە، نمایشکردنی داتا، و هاوبەشکاری. بە شێوەیەکی نەریتی، ئەم بواری پڕۆگرامینگە وەک شتێکی نهێنی دادەنرا، تەنها بۆ هەندێک کەس گونجاو بووە کە ساڵانێکی زۆریان تەرخان کردووە بۆ خۆپاراستن لە کەموکوڕییە ناوازەکانی. تەنانەت ئەوانەی کاری تێدا دەکەن بە وریاییەوە دەینووسن، نەوەک کۆدەکەیان کراوە بێت بۆ هەڵەی تۆڕ، تووشبوون، یان خراپ.
 
-Rust breaks down these barriers by eliminating the old pitfalls and providing a
-friendly, polished set of tools to help you along the way. Programmers who need
-to “dip down” into lower-level control can do so with Rust, without taking on
-the customary risk of crashes or security holes, and without having to learn
-the fine points of a fickle toolchain. Better yet, the language is designed to
-guide you naturally towards reliable code that is efficient in terms of speed
-and memory usage.
+ڕەست ئەم کۆسپانە لادەبات بە لابردنی کەموکوڕییە کۆنەکان و دابینکردنی کۆمەڵێک ئامراز کە دۆستانە و پاراون بۆ هاریکاریکردنتان. بۆ ئەو پڕۆگرامەرانەی کە پێویستیانە "دابەزنە خوارەوە" بۆ کۆنترۆڵی ئاستی نزمتر، دەتوانن ئەمە بکەن بە ڕەست، بەبێ ئەوەی ڕووبەڕووی مەترسی تووشبوون یان ئاستەنگەکانی تۆڕ ببنەوە، وە بەبێ ئەوەی پێویست بکات وردەکارییەکانی کەرەستەیەکی گۆڕاو فێر بن. زیاتر لەوەش، زمانەکە بە شێوەیەک دیزاین کراوە کە سەرنج دەبات بەرەو کۆدێکی پشتپێبەستراو کە لە ڕووی خێرایی و بەکارهێنانی بیرگەوە کارامەیە.
 
-Programmers who are already working with low-level code can use Rust to raise
-their ambitions. For example, introducing parallelism in Rust is a relatively
-low-risk operation: the compiler will catch the classical mistakes for you. And
-you can tackle more aggressive optimizations in your code with the confidence
-that you won’t accidentally introduce crashes or vulnerabilities.
+ئەو پڕۆگرامەرانەی کە ئێستا کار لەگەڵ کۆدی ئاستی نزم دەکەن دەتوانن ڕەست بەکاربهێنن بۆ بەرزکردنەوەی ئامانجەکانیان. بۆ نموونە، زیادکردنی هاوتەریب لە ڕەست کارێکی کەم مەترسییە: کۆمپایڵەر هەڵەە کلاسیکەکانت بۆ دەدۆزێتەوە. هەروەها دەتوانیت گونجاندنی زیاتر لە کۆدەکەتدا بکەیت بە متمانەوە کە بە هەڵە تووشبوون یان لاوازی دروست ناکەیت.
 
-But Rust isn’t limited to low-level systems programming. It’s expressive and
-ergonomic enough to make CLI apps, web servers, and many other kinds of code
-quite pleasant to write — you’ll find simple examples of both later in the
-book. Working with Rust allows you to build skills that transfer from one
-domain to another; you can learn Rust by writing a web app, then apply those
-same skills to target your Raspberry Pi.
+بەڵام ڕەست سنووردار نییە و تایبەت نییە بە پڕۆگرامەکانی سیستمی نزم. ئەوەندە گونجاو و بەکارهاتووە کە لە درووستکردنی بەرنامەی CLI، ڕاژەکانی وێب، و زۆر جۆری تری کۆد ئاسودەت دەکات — نموونەی سادەی ئەمانە دواتر لە پەڕتووکەکەدا دەبینن. کارکردن بە ڕەست ئەو شارەزاییانەت پێ دەدات کە لە بوارێکەوە بۆ بوارێکی تر دەگوازرێنەوە؛ دەتوانیت ڕەست فێر بیت بە نووسینی بەرنامەیەکی وێب، پاشان هەمان ئەو شارەزاییانە بۆ ئامانجگرتنی ڕاسپبێری پای بەکاربهێنیت.
 
-This book fully embraces the potential of Rust to empower its users. It’s a
-friendly and approachable text intended to help you level up not just your
-knowledge of Rust, but also your reach and confidence as a programmer in
-general. So dive in, get ready to learn—and welcome to the Rust community!
+ئەم پەڕتووکە بە تەواوی توانای ڕەست بۆ بەهێزکردنی بەکارهێنەرانی پێشکەش دەکات. ئەمە دەقێکی دۆستانە و نزیکە کە مەبەستی یارمەتیدانتانە نەک هەر لە زانستی ڕەست، بەڵکو لە گەیشتن و متمانەی خۆتان وەک پڕۆگرامەرێکی گشتی. بۆیە بچنە ناوەوە، ئامادەی فێربوون بن — و بەخێربهێن بۆ کۆمەڵگەی ڕەست!
 
-— Nicholas Matsakis and Aaron Turon
+— نیکۆڵاس ماتساکیس و ئارۆن تورۆن
