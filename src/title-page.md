@@ -1,26 +1,19 @@
-# The Rust Programming Language
+# زمانی پڕۆگرامینگی ڕەست
+بە پێنووسی ستیڤ کڵابنیک، کارۆڵ نیکۆڵس، و کریس کریچۆ، بە هاوکاریی کۆمەڵگەی ڕەست_
 
-_by Steve Klabnik, Carol Nichols, and Chris Krycho, with contributions from the
-Rust Community_
+ئەم وەشانەی دەق گریمانە دەکات کە ئێوە ڕەستی 1.85.0 (بڵاوکراوە لە 2025-02-17)
+یان نوێتری بەکاردەهێنن. بۆ دامەزراندن یان نوێکردنەوەی ڕەست، سەیری بەشی ["دامەزراندن"ی بەشی یەکەم][install] بکەن.
 
-This version of the text assumes you’re using Rust 1.85.0 (released 2025-02-17)
-or later. See the [“Installation” section of Chapter 1][install]<!-- ignore -->
-to install or update Rust.
-
-The HTML format is available online at
+فۆرمی HTML بەردەستە لە:
 [https://doc.rust-lang.org/stable/book/](https://doc.rust-lang.org/stable/book/)
-and offline with installations of Rust made with `rustup`; run `rustup doc
---book` to open.
+و بە شێوەی سەرهێڵ لەگەڵ دامەزراوەکانی ڕەست کە بە `rustup` دادەمەزرێن؛ `rustup doc --book` جێبەجێ بکەن بۆ کردنەوەی.
 
-Several community [translations] are also available.
+چەندین وەرگێڕانی کۆمەڵگەیی [وەرگێڕان] بەردەستن.
 
-This text is available in [paperback and ebook format from No Starch
-Press][nsprust].
+ئەم دەقە بە فۆرمی چاپی کاغەزی و ئەلیکترۆنی لە [No Starch Press][nsprust] بەردەستە.
 
 [install]: ch01-01-installation.html
 [nsprust]: https://nostarch.com/rust-programming-language-2nd-edition
 [translations]: appendix-06-translation.html
 
-> **🚨 Want a more interactive learning experience? Try out a different version
-> of the Rust Book, featuring: quizzes, highlighting, visualizations, and
-> more**: <https://rust-book.cs.brown.edu>
+> **🚨 ئەزموونێکی فێربوونی زیاتر دەتەوێت؟ گۆڕانکارییەکی تری پەڕتووکی ڕەست تاقی بکەوە، کە تایبەتە بە: تاقیكردنەوەكان، دەرخستن، بینراوەكان، و زیاتر**: <https://rust-book.cs.brown.edu>
